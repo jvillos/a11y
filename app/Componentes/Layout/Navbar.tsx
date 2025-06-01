@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 import type { NavbarProps } from "~/Types/interfaces";
 
-const linkClassBase = "ms-4 p-4 text-md font-bold hover:bg-blue-800 hover:rounded";
+const linkClassBase = "ms-4 p-4 text-md font-bold hover:bg-blue-800 hover:text-yellow-300 hover:rounded";
 
 function Navbar({ textcolor }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);

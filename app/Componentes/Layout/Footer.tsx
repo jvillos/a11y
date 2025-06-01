@@ -4,16 +4,16 @@ import { FaTwitter, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Footer({ backgroundcolor, textcolor }: HeaderProps) {
   return (
-    <footer className={`${backgroundcolor} ${textcolor} p-2 shadow-md`}>
+    <footer id="footer" className={`${backgroundcolor} ${textcolor} p-8 shadow-md`} tabIndex={-1}>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
 
-          <div className="text-md text-center font-semibold sm:text-left">
+          <div className="text-md text-center font-semibold sm:text-left mb-6">
             <p>Contacto: jvillosl14@gmail.com</p>
             <p>Tel: +34 675 81 87 22</p>
           </div>
 
-          <div className="flex flex-col items-center gap-1">
+          <div className="flex flex-col items-center gap-1 mb-6">
             <Logo image="logo" format="avif" />
             <span className="text-base font-semibold">&copy; 2024. Made by Juan Villoslada Jiménez</span>
           </div>
