@@ -1,8 +1,21 @@
-import React from 'react'
+import Header from "~/Componentes/Layout/Header";
+import Footer from "~/Componentes/Layout/Footer";
+import { Outlet } from "react-router";
 
 function Index() {
+  const backgroundcolor = "bg-blue-900";
+  const textcolor = "text-white";
+
   return (
-    <div className='h-300 w-full bg-amber-300'>Index</div>
+    <>
+      <div className="flex flex-col min-h-screen">
+        <Header backgroundcolor={backgroundcolor} textcolor={textcolor} />
+        <div className="w-full mx-auto mb-7 flex-grow">
+          <Outlet />
+        </div>
+        <Footer />
+      </div>
+    </>
   )
 }
 
