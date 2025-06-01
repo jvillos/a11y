@@ -1,5 +1,7 @@
 import Logo from "../Logo";
 import Navbar from "~/Componentes/Layout/Navbar";
+import ThemeToggle from "~/Componentes/Accesibilidad/ThemeToggle";
+
 import type { HeaderProps } from "~/Types/interfaces";
 
 function Header({ backgroundcolor, textcolor }: HeaderProps) {

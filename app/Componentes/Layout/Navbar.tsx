@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 import type { NavbarProps } from "~/Types/interfaces";
 
-const linkClassBase = "ms-4 p-4 text-md font-medium hover:bg-blue-800 hover:rounded";
+const linkClassBase = "ms-4 p-4 text-md font-bold hover:bg-blue-800 hover:rounded";
 
 function Navbar({ textcolor }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,7 +39,7 @@ function Navbar({ textcolor }: NavbarProps) {
           aria-expanded={menuOpen}
         >
           <svg
-            className="h-6 w-6 text-current"
+            className="h-11 w-11 text-current"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

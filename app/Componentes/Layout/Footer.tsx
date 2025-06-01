@@ -1,9 +1,50 @@
-import React from 'react'
+import Logo from "../Logo";
+import type { HeaderProps } from "~/Types/interfaces";
+import { FaTwitter, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
-function Footer() {
+function Footer({ backgroundcolor, textcolor }: HeaderProps) {
   return (
-    <div>Footer</div>
-  )
+    <footer className={`${backgroundcolor} ${textcolor} p-2 shadow-md`}>
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+
+          <div className="text-md text-center font-semibold sm:text-left">
+            <p>Contacto: jvillosl14@gmail.com</p>
+            <p>Tel: +34 675 81 87 22</p>
+          </div>
+
+          <div className="flex flex-col items-center gap-1">
+            <Logo image="logo" format="avif" />
+            <span className="text-base font-semibold">&copy; 2024. Made by Juan Villoslada Jiménez</span>
+          </div>
+
+          <div className="flex gap-4">
+            <a
+              href="https://github.com/jvillos"
+              aria-label="GitHub profile of Juan Villoslada"
+              className="hover:text-yellow-300 transition"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="h-11 w-11" aria-hidden="true" />
+              <span className="sr-only">Mi perfil de Github</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/juan-villoslada-jimenez/"
+              aria-label="LinkedIn profile of Juan Villoslada Jiménez"
+              className="hover:text-yellow-300 transition"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="h-11 w-11" aria-hidden="true" />
+              <span className="sr-only">Mi perfil de LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
