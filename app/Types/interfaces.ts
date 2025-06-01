@@ -17,3 +17,9 @@ export interface SkipLinkProps {
   label?: string;
   className?: string;
 }
+
+export interface ButtonProps {
+  text: string;
+  variant?: "default" | "hover"; // inline variant type
+  onClick: (text: string) => void;
+}

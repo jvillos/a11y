@@ -4,7 +4,7 @@ import type { HeaderProps } from "~/Types/interfaces";
 
 function Header({ backgroundcolor, textcolor }: HeaderProps) {
   return (
-    <header className={`${backgroundcolor} ${textcolor} p-4 shadow-md`}>
+    <header className={`${backgroundcolor} ${textcolor} p-2 shadow-md`}>
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center">
           <div className="flex items-center">

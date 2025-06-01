@@ -15,9 +15,8 @@ export const SkipLink = ({
         px-5 py-3 rounded-md
         inline-block max-w-max
         font-semibold shadow-md
-        focus:m-8 focus:p-4
+        focus:m-6 focus:p-4
         focus:outline-none 
-        focus:ring-4 focus:ring-blue-400
         transition transform
         focus:scale-105
         z-50

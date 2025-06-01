@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 import type { NavbarProps } from "~/Types/interfaces";
 
-const linkClassBase = "ms-4 p-4 text-md font-medium hover:underline";
+const linkClassBase = "ms-4 p-4 text-md font-medium hover:bg-blue-800 hover:rounded";
 
 function Navbar({ textcolor }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +13,6 @@ function Navbar({ textcolor }: NavbarProps) {
 
   return (
     <>
-      {/* Desktop menu */}
       <nav className="hidden md:flex md:ms-6" aria-label="Menú principal">
         <NavLink to="/" className={linkClass} end>
           Inicio
@@ -32,7 +31,6 @@ function Navbar({ textcolor }: NavbarProps) {
         </NavLink>
       </nav>
 
-      {/* Mobile menu button */}
       <div className="md:hidden">
         <button
           onClick={toggleMenu}
@@ -65,7 +63,6 @@ function Navbar({ textcolor }: NavbarProps) {
         </button>
       </div>
 
-      {/* Mobile menu items */}
       {menuOpen && (
         <nav
           className="mt-4 flex flex-col space-y-2 md:hidden"
