@@ -7,8 +7,8 @@ function Herramientas() {
 
     <section className="max-w-4xl mx-auto p-6 text-gray-900 dark:text-gray-100">
       <h1 className="mb-4 font-bold">Salta a las distintas secciones</h1>
-      <nav className="mb-10 flex flex-wrap gap-4">
-        <ul className="flex gap-x-6" >
+      <nav className="mb-10">
+        <ul className="flex  flex-wrap gap-x-6 gap-y-4" >
           <li>
             <SkipLinkInside href="#comprobadores" label="Comprobadores de accesibilidad" />
           </li>

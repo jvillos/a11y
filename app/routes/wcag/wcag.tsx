@@ -6,7 +6,7 @@ function Wcag() {
       <h1 className="mb-4 font-bold">Salta a las distintas secciones</h1>
 
       <nav className="mb-10">
-        <ul className="flex gap-2">
+        <ul className="flex flex-wrap gap-x-6 gap-y-4">
           <li>
             <SkipLinkInside href="#wcag" label="¿Qué son las WCAG?" />
           </li>
@@ -14,12 +14,12 @@ function Wcag() {
             <SkipLinkInside href="#niveles-conformidad" label="Niveles de conformidad (A, AA, AAA)" />
           </li>
         </ul>
-        <ul className="flex gap-2 mt-4">
+        <ul className="flex flex-wrap gap-x-6 gap-y-4 mt-4">
           <li>
             <SkipLinkInside href="#principios-pour" label="Principios POUR" />
           </li>
         </ul>
-        <ul className="flex gap-2 mt-4">
+        <ul className="flex flex-wrap gap-x-6 gap-y-4 mt-4">
           <li className="ml-4">
             <SkipLinkInside href="#perceptible" label="Perceptible" />
           </li>
@@ -33,7 +33,7 @@ function Wcag() {
             <SkipLinkInside href="#robusto" label="Robusto" />
           </li>
         </ul>
-        <ul className="flex gap-2 mt-4">
+        <ul className="flex flex-wrap gap-x-6 gap-y-4 mt-4">
           <li>
             <SkipLinkInside href="#wcag-22" label="Novedades en WCAG 2.2" />
           </li>
