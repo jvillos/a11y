@@ -4,7 +4,7 @@ import { FaTwitter, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Footer({ backgroundcolor, textcolor }: HeaderProps) {
   return (
-    <footer id="footer" className={`${backgroundcolor} ${textcolor} p-8 shadow-md`} tabIndex={-1}>
+    <footer id="footer" className={`${backgroundcolor} ${textcolor} p-8 shadow-md `} tabIndex={-1}>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
 

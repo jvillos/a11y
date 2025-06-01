@@ -3,6 +3,7 @@ import SkipLinkInside from "~/Componentes/Accesibilidad/SkipLinkInside";
 
 function Legislacion() {
   return (
+  <div className="max-w-4xl mb-7 mx-auto px-3">
     <section className="max-w-4xl mx-auto p-6 text-gray-900 dark:text-gray-100">
       <h1 className="mb-4 font-bold">Salta a las distintas secciones</h1>
       <nav className="mb-10">
@@ -86,6 +87,7 @@ function Legislacion() {
         </p>
       </section>
     </section>
+  </div>
   );
 }
 

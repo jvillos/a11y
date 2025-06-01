@@ -1,8 +1,14 @@
-import React from 'react'
+import Button from "~/Componentes/Accesibilidad/Button";
 
 function Componentes() {
   return (
-    <div>Componentes</div>
+    <Button
+        text="Click me"
+        variant="default"
+        onClick={() => {
+          alert('¡Botón pulsado!');
+        }}
+      />
   )
 }
 
