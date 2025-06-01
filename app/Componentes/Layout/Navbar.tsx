@@ -14,21 +14,33 @@ function Navbar({ textcolor }: NavbarProps) {
   return (
     <>
       <nav className="hidden md:flex md:ms-6" aria-label="Menú principal">
-        <NavLink to="/" className={linkClass} end>
-          Inicio
-        </NavLink>
-        <NavLink to="/wcag" className={linkClass}>
-          WCAG
-        </NavLink>
-        <NavLink to="/legislacion" className={linkClass}>
-          Legislación
-        </NavLink>
-        <NavLink to="/componentes" className={linkClass}>
-          Componentes
-        </NavLink>
-        <NavLink to="/herramientas" className={linkClass}>
-          Herramientas
-        </NavLink>
+        <ul className="flex gap-x-6">
+          <li>
+            <NavLink to="/" className={linkClass} end>
+              Inicio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/wcag" className={linkClass}>
+              WCAG
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/legislacion" className={linkClass}>
+              Legislación
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/componentes" className={linkClass}>
+              Componentes
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/herramientas" className={linkClass}>
+              Herramientas
+            </NavLink>
+          </li>
+        </ul>
       </nav>
 
       <div className="md:hidden">

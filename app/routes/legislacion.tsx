@@ -4,11 +4,22 @@ import SkipLinkInside from "~/Componentes/Accesibilidad/SkipLinkInside";
 function Legislacion() {
   return (
     <section className="max-w-4xl mx-auto p-6 text-gray-900 dark:text-gray-100">
-      <h1 className="mb-6">Salta a las distintas secciones</h1>
+      <h1 className="mb-4 font-bold">Salta a las distintas secciones</h1>
       <nav className="mb-10 flex flex-wrap gap-4">
-        <SkipLinkInside href="#europa" label="Europa" />
-        <SkipLinkInside href="#espana" label="España" />
-        <SkipLinkInside href="#nueva-ley" label="Nueva Ley Española" />
+        <ul className="flex gap-x-6">
+          <li>
+            <SkipLinkInside href="#europa" label="Europa" />
+          </li>
+          <li>
+            <SkipLinkInside href="#espana" label="España" />
+          </li>
+          <li>
+            <SkipLinkInside href="#nueva-ley" label="Nueva Ley Española" />
+          </li>
+        </ul>
+
+
+
       </nav>
 
       <h1 className="text-3xl font-bold mb-6">Legislación sobre Accesibilidad Digital</h1>
@@ -63,15 +74,15 @@ function Legislacion() {
         />
         <p className="mb-8 text-lg leading-relaxed">
           A partir de junio de 2025 las empresas con presencia online en España deberán cumplir
-           con los estándares de WCAG 2.1 en nivel AA. En caso de no cumplirse, las multas correspondientes
-            podrían ser desde 5.000 € para pymes hasta 150.000 € para grandes empresas, además de la posible pérdida
-             de usuarios, reputación y confianza. Para más información acerca de la normativa, visite  
-             <Link to="/wcag" className="text-blue-600 dark:text-blue-400 underline"
-                  target="_blank"
-                  rel="noopener noreferrer"> la sección WCAG en nuestra página</Link> o 
-             <a href="https://www.w3.org/TR/WCAG21/" className="text-blue-600 dark:text-blue-400 underline"
-                  target="_blank"
-                  rel="noopener noreferrer">la documentación oficial de WCAG 2.1.</a>
+          con los estándares de WCAG 2.1 en nivel AA. En caso de no cumplirse, las multas correspondientes
+          podrían ser desde 5.000 € para pymes hasta 150.000 € para grandes empresas, además de la posible pérdida
+          de usuarios, reputación y confianza. Para más información acerca de la normativa, visite
+          <Link to="/wcag" className="text-blue-900 dark:text-blue-400 hover:text-blue-600 underline"
+            target="_blank"
+            rel="noopener noreferrer"> la sección WCAG en nuestra página</Link> o
+          <a href="https://www.w3.org/TR/WCAG21/" className="text-blue-900 dark:text-blue-400 hover:text-blue-600 underline"
+            target="_blank"
+            rel="noopener noreferrer"> la documentación oficial de WCAG 2.1.</a>
         </p>
       </section>
     </section>

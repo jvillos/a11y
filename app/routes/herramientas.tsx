@@ -6,11 +6,22 @@ function Herramientas() {
   return (
 
     <section className="max-w-4xl mx-auto p-6 text-gray-900 dark:text-gray-100">
-      <h1 className="mb-6">Salta a las distintas secciones</h1>
+      <h1 className="mb-4 font-bold">Salta a las distintas secciones</h1>
       <nav className="mb-10 flex flex-wrap gap-4">
-        <SkipLinkInside href="#comprobadores" label="Comprobadores de accesibilidad"/>
-        <SkipLinkInside href="#lectores" label="Lectores de Pantalla"/>
-        <SkipLinkInside href="#plugins" label="Plugins y Utilidades"/>
+        <ul className="flex gap-x-6" >
+          <li>
+            <SkipLinkInside href="#comprobadores" label="Comprobadores de accesibilidad" />
+          </li>
+          <li>
+            <SkipLinkInside href="#lectores" label="Lectores de Pantalla" />
+          </li>
+          <li>
+            <SkipLinkInside href="#plugins" label="Plugins y Utilidades" />
+          </li>
+        </ul>
+
+
+
       </nav>
 
       <h1 className="text-3xl font-bold mb-6">Herramientas para Evaluar la Accesibilidad</h1>
@@ -98,7 +109,7 @@ function Herramientas() {
                 <strong>Descarga:</strong>{' '}
                 <a
                   href="https://www.nvaccess.org"
-                  className="text-blue-600 dark:text-blue-400 underline"
+                  className="text-blue-900 dark:text-blue-400 hover:text-blue-600 underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -124,7 +135,7 @@ function Herramientas() {
                 <strong>Descarga:</strong>{' '}
                 <a
                   href="https://www.freedomscientific.com"
-                  className="text-blue-600 dark:text-blue-400 underline"
+                  className="text-blue-900 dark:text-blue-400 hover:text-blue-600 underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
