@@ -11,6 +11,9 @@ function Footer({ backgroundcolor, textcolor }: HeaderProps) {
           <div className="text-md text-center font-semibold sm:text-left mb-6">
             <p>Contacto: jvillosl14@gmail.com</p>
             <p>Tel: +34 675 81 87 22</p>
+            <p className="mt-6"><a href="https://github.com/jvillos/a11y" className="text-blue-900 dark:text-blue-400 hover:text-blue-600 underline"
+              target="_blank"
+              rel="noopener noreferrer"> Visite el repositorio de esta página en Github</a></p>
           </div>
 
           <div className="flex flex-col items-center gap-1 mb-6">
