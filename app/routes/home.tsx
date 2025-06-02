@@ -27,7 +27,7 @@ export default function Home() {
           </p>
           <Link
             to="/wcag"
-            className="inline-block px-6 py-3 bg-blue-900 hover:bg-blue-800 text-white rounded-lg font-medium transition"
+            className="inline-block px-6 py-3 bg-blue-900 hover:bg-blue-800 text-white hover:text-yellow-300 rounded-lg font-medium transition"
           >
             Comienza Ahora
           </Link>
