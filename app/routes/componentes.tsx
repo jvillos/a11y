@@ -1,8 +1,14 @@
 import FormularioAccesible from "~/Componentes/Accesibilidad/FormularioAccesible";
+import ModalAccesible from "~/Componentes/Accesibilidad/ModalAccesible";
+import SelectorFecha from "~/Componentes/Accesibilidad/SelectorFecha";
 import SkipLinkInside from "~/Componentes/Accesibilidad/SkipLinkInside";
 import Toggle from "~/Componentes/Accesibilidad/Toggle";
 
+import { useState } from "react";
+
 function ComponentesAccesibles() {
+  const [checked, setChecked] = useState(false);
+
   return (
     <div className="max-w-4xl my-10 mx-auto px-3">
       <section className="max-w-4xl mx-auto p-6 text-gray-900 dark:text-gray-100">
@@ -13,12 +19,6 @@ function ComponentesAccesibles() {
               <SkipLinkInside href="#skip-link" label="Skip Link" />
             </li>
             <li>
-              <SkipLinkInside href="#dropdown" label="Dropdown Accesible" />
-            </li>
-            <li>
-              <SkipLinkInside href="#carrusel" label="Carrusel" />
-            </li>
-            <li>
               <SkipLinkInside href="#formulario" label="Formulario Accesible" />
             </li>
             <li>
@@ -26,6 +26,9 @@ function ComponentesAccesibles() {
             </li>
             <li>
               <SkipLinkInside href="#modal" label="Modal Accesible" />
+            </li>
+            <li>
+              <SkipLinkInside href="#fecha" label="Selector de fecha" />
             </li>
           </ul>
         </nav>
@@ -64,9 +67,32 @@ function ComponentesAccesibles() {
             <p className="italic mb-6 text-blue-700 dark:text-blue-400">
               ¡Recarga la página y prueba a navegar con la tecla Tab para encontrarme!
             </p>
-            
+
           </article>
 
+         {/* <article id="checkbox" className="mt-16 scroll-mt-28" tabIndex={-1}>
+            <h2 className="text-2xl font-semibold mb-4">Checkbox Accesible</h2>
+            <p className="mb-4">
+              Este checkbox está diseñado para ser completamente accesible, con etiquetas claras y
+              un estado visual que facilita su uso con teclado y lectores de pantalla.
+            </p>
+            <p className="italic mb-6 text-green-700 dark:text-green-400">
+              Prueba a activar y desactivar el checkbox usando solo el teclado.
+            </p>
+            <CheckboxAccesible label="Aceptar términos" />
+          </article>
+
+           <article id="radio-group" className="mt-16 scroll-mt-28" tabIndex={-1}>
+            <h2 className="text-2xl font-semibold mb-4">Radio Group Accesible</h2>
+            <p className="mb-4">
+              Este grupo de opciones permite seleccionar una opción entre varias usando teclado o
+              pantalla táctil, con etiquetas claras y navegación accesible.
+            </p>
+            <p className="italic mb-6 text-purple-700 dark:text-purple-400">
+              Navega entre opciones con las flechas del teclado para probar su accesibilidad.
+            </p>
+            <RadioGroupAccesible />
+          </article>*/}
 
           <article id="formulario" className="mt-16 scroll-mt-28" tabIndex={-1}>
             <h2 className="text-2xl font-semibold mb-4">Formulario Accesible</h2>
@@ -96,21 +122,33 @@ function ComponentesAccesibles() {
             <Toggle />
           </article>
 
-          {/* MODAL */}
+
           <article id="modal" className="mt-16 mb-16 scroll-mt-28" tabIndex={-1}>
             <h2 className="text-2xl font-semibold mb-4">Modal Accesible</h2>
             <p className="mb-4">
               Una ventana emergente que atrapa el foco (focus trap) para que el
               usuario no pueda salir de ella accidentalmente. Se puede cerrar
-              con la tecla Escape o haciendo clic fuera del contenido.
+              con la tecla Escape o con el botón Cerrar.
             </p>
             <p className="italic mb-6 text-blue-700 dark:text-blue-400">
               ¡Ábreme y navega solo con el teclado para ver cómo se gestiona el foco!
             </p>
-            <div className="border border-dashed border-gray-400 p-4 rounded">
-              {/* <AccessibleModal /> */}
-              <span className="text-sm text-gray-500">[Aquí va el componente Modal]</span>
-            </div>
+            <ModalAccesible />
+          </article>
+
+
+          <article id="fecha" className="mt-16 scroll-mt-28" tabIndex={-1}>
+            <h2 className="text-2xl font-semibold mb-4">Selector de Fecha Accesible</h2>
+            <p className="mb-4">
+              Este selector de fecha ha sido diseñado con accesibilidad en mente, permitiendo la navegación por teclado,
+              lectura por tecnologías asistivas y soporte para modo oscuro. Los usuarios pueden seleccionar fácilmente una
+              fecha con controles claros y un enfoque intuitivo. Una vez abierto el calendario, el foco queda fijo entre los
+              controles de paso de mes y los días. Para salir, pulsar esc o seleccionar día.
+            </p>
+            <p className="italic mb-6 text-blue-700 dark:text-blue-400">
+              Prueba navegar con el teclado.
+            </p>
+            <SelectorFecha />
           </article>
         </div>
       </section>

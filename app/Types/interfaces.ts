@@ -29,3 +29,7 @@ export interface SkipLinkInsideProps {
   label: string;
   className?: string;
 }
+
+export interface CheckboxAccesibleProps {
+  label: string;
+};
