@@ -24,6 +24,7 @@ const SkipLinkInside: React.FC<SkipLinkInsideProps> = ({ href, label }) => {
         inline-block max-w-max
         font-semibold shadow-md
         hover:bg-blue-800 focus:bg-blue-800
+        hover:text-yellow-300
         focus:outline-none focus:ring-2 focus:ring-blue-300
         transition duration-150
       "
