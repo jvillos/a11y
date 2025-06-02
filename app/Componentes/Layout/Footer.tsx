@@ -15,13 +15,13 @@ function Footer({ backgroundcolor, textcolor }: HeaderProps) {
 
           <div className="flex flex-col items-center gap-1 mb-6">
             <Logo image="logo" format="avif" />
-            <span className="text-base font-semibold">&copy; 2024. Made by Juan Villoslada Jiménez</span>
+            <span className="text-base font-semibold">&copy; 2024. Hecho por Juan Villoslada Jiménez</span>
           </div>
 
           <div className="flex gap-4">
             <a
               href="https://github.com/jvillos"
-              aria-label="GitHub profile of Juan Villoslada"
+              aria-label="Mi perfil de Github"
               className="hover:text-yellow-300 transition"
               target="_blank"
               rel="noopener noreferrer"
@@ -32,7 +32,7 @@ function Footer({ backgroundcolor, textcolor }: HeaderProps) {
 
             <a
               href="https://www.linkedin.com/in/juan-villoslada-jimenez/"
-              aria-label="LinkedIn profile of Juan Villoslada Jiménez"
+              aria-label="Mi perfil de LinkedIn"
               className="hover:text-yellow-300 transition"
               target="_blank"
               rel="noopener noreferrer"
