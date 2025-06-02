@@ -21,7 +21,7 @@ function Index() {
             max-w-7xl w-full
             bg-gray-200 shadow-lg
             dark:bg-gray-800 dark:shadow-black/50
-            min-h-full
+            min-h-full pb-16
           "
         >
           <Outlet />
