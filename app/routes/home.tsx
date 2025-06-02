@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <section
-        className="relative w-full h-[100vh] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
+        className="relative w-full h-[90vh] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
         style={{ backgroundImage: "url('/imagenes/imagen1.avif')" }}
       >
         <div className="absolute inset-0 bg-black/60 z-0" aria-hidden="true" />
