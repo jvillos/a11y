@@ -9,10 +9,8 @@ function Header({ backgroundcolor, textcolor }: HeaderProps) {
     <header className={`${backgroundcolor} ${textcolor} p-2 shadow-md `}>
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center">
-          <div className="flex items-center">
             <Logo image="logo" format="avif" />
             <Navbar textcolor={textcolor} />
-          </div>
         </div>
       </div>
     </header>
